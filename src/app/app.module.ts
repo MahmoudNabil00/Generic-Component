@@ -7,6 +7,8 @@ import { PageOneComponent } from './page-one/page-one.component';
 import { PageTwoComponent } from './page-two/page-two.component';
 import { PageThreeComponent } from './page-three/page-three.component';
 import { AppRoutingModule } from './app-routing.module';
+import { DynamicTemplateComponent } from './dynamic-template/dynamic-template.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -15,10 +17,11 @@ import { AppRoutingModule } from './app-routing.module';
     GenericComponent,
     PageOneComponent,
     PageTwoComponent,
-    PageThreeComponent
+    PageThreeComponent,
+    DynamicTemplateComponent
   ],
   imports: [
-    BrowserModule , RouterModule ,AppRoutingModule
+    BrowserModule , RouterModule ,AppRoutingModule,FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

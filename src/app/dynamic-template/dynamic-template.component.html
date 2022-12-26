@@ -1,0 +1,42 @@
+<div class="container0" style="display: flex; margin-top: 30px;">
+    <h2 style="padding:15px">Choose the Template:</h2>
+    <select name="" id="" style="padding: 10px;width:120px;" (change)="currentTemplate(value)" [(ngModel)]="value">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+    </select>
+</div>
+<ng-container [ngTemplateOutlet]="getTemplate()">
+    
+</ng-container>
+
+    <ng-template #default>
+        <div class="container">
+            <h1>default template is work Now</h1>
+            <button (click)="showAlert()">Click me</button>
+        </div>
+    </ng-template>
+    <ng-template #A>
+        <div class="container a">
+            <div><h1>Template A is work</h1></div>
+            <div>
+                <button style="margin: 20px;padding: 10px;background: blue;color: white;cursor:pointer" (click)="showAlert()">Show Alert</button>
+            </div>
+        </div>
+    </ng-template>
+    <ng-template #B>
+        <div class="container b">
+        <div><h1>Template B is work</h1></div>
+        <div>
+            <button style="margin: 20px;padding: 10px;background: rgb(217, 255, 0);color: white;cursor:pointer" (click)="showAlert()">Show Alert</button>
+        </div>
+        </div>
+    </ng-template>
+    <ng-template #C>
+        <div class="container c">
+        <div><h1>Template C is work</h1></div>
+        <div>
+            <button style="margin: 20px;padding: 10px;background: rgb(255, 0, 123);color: white;cursor:pointer" (click)="showAlert()">Show Alert</button>
+        </div>
+    </div>
+    </ng-template>

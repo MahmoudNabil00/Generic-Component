@@ -1,0 +1,32 @@
+.nav-bar{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    height: 50px;
+    /* display: flex; */
+    align-items: center;
+    /* justify-content: center; */
+}
+.nav-bar ul {
+    display: flex;
+    gap:10px;
+    list-style: none;
+    justify-content: center;
+}
+.nav-bar ul li{
+    margin: 0px 10px;
+    font-family: system-ui;
+    transition: all ease-in-out 0.1s;
+    padding: 10px;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-bar ul li:hover{
+    background-color: rgba(255, 255, 255, 0.297);
+    cursor: pointer;
+}
+.active{
+    border-bottom: solid white 2px;
+}

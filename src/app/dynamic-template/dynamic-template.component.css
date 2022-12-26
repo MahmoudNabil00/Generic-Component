@@ -1,0 +1,15 @@
+.container{
+    padding: 30px;
+}
+.b{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.c{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}

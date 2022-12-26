@@ -1,3 +1,4 @@
+import { GenericComponent } from './../generic/generic.component';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -5,11 +6,13 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './page-three.component.html',
   styleUrls: ['./page-three.component.css']
 })
-export class PageThreeComponent implements OnInit {
+export class PageThreeComponent extends GenericComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    super()
+  }
 
-  ngOnInit(): void {
+  override ngOnInit(): void {
   }
 
 }
