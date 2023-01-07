@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DynamicTemplateComponent } from './dynamic-template.component';
+import { Client2Component } from './client2.component';
 
-describe('DynamicTemplateComponent', () => {
-  let component: DynamicTemplateComponent;
-  let fixture: ComponentFixture<DynamicTemplateComponent>;
+describe('Client2Component', () => {
+  let component: Client2Component;
+  let fixture: ComponentFixture<Client2Component>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DynamicTemplateComponent ]
+      declarations: [ Client2Component ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DynamicTemplateComponent);
+    fixture = TestBed.createComponent(Client2Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

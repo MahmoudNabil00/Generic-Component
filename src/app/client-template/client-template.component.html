@@ -1,0 +1,26 @@
+<app-dynamic-template #any  [clientTempalte]="client"></app-dynamic-template>
+<!-- https://www.youtube.com/watch?v=T1es5K09vVI&t=144s -->
+
+
+
+<ng-template #client>
+    <div class="client-side mt-2 text-center">
+        <h1>Client Side</h1>
+    </div>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="text col-md-4 custom-color">
+                <h5 class="custom-font">Type the text that you want to alert</h5>
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" [(ngModel)]="any.property" (keyup.enter)="any.showAlert('1')">
+            </div>
+            <div class="col-md-3">
+                <button class="form-control btn btn-dark mb-3" (click)="any.showAlert('1')">Show Alert</button>
+                <button class="form-control btn btn-primary" (click)="any.showAlert2()">Show Alert2</button>
+            </div>
+            <h2 *ngFor="let color of any.color" [ngStyle]="{'background-color':color}">{{color}}</h2>
+            <h2>{{any.property}}</h2>
+        </div>
+    </div>
+</ng-template>

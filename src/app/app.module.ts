@@ -9,6 +9,8 @@ import { PageThreeComponent } from './page-three/page-three.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DynamicTemplateComponent } from './dynamic-template/dynamic-template.component';
 import { FormsModule } from '@angular/forms';
+import { ClientTemplateComponent } from './client-template/client-template.component';
+import { Client2Component } from './client2/client2.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { FormsModule } from '@angular/forms';
     PageOneComponent,
     PageTwoComponent,
     PageThreeComponent,
-    DynamicTemplateComponent
+    DynamicTemplateComponent,
+    ClientTemplateComponent,
+    Client2Component
   ],
   imports: [
     BrowserModule , RouterModule ,AppRoutingModule,FormsModule

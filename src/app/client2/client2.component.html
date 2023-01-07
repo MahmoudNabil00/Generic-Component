@@ -1,0 +1,18 @@
+<app-dynamic-template #any2 [clientTempalte]="client2"></app-dynamic-template>
+
+<ng-template #client2>
+    <div class="generic-template container">
+        <div class="text custom-color">
+            <h1>Type the text that you want to show below</h1>
+        </div>
+        <div class="my-form">
+            <input class="form-control"  type="text" [(ngModel)]="any2.property">
+            <button [ngStyle]="{'background-color': any2.color[1]}" (click)="any2.showAlert2()"  class="btn btn-primary form-control mt-2">
+                Alert
+            </button>
+        </div>
+    </div>
+    <h3 class="custom-color" style="margin: 50px auto;width: 500px;overflow-wrap: anywhere;">
+        {{any2.property}}
+    </h3>
+</ng-template>
